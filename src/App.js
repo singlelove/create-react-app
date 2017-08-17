@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import ReactTable from 'react-table';
 import Notifications, { notify } from './components/Toast/Notify';
 import 'react-table/react-table.css';
-import './App.scss';
+import './App.css';
 
 class App extends Component {
     show() {

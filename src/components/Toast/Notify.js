@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import Lodash from 'lodash';
-import './test.scss';
 
 let notificationWrapperId = 'notification-wrapper';
 let defaultTimeout = 2000; // ms
