@@ -212,6 +212,13 @@ module.exports = {
                     // This loader don't uses a "test" so it will catch all modules
                     // that fall through the other loaders.
                     {
+                        test: require.resolve('jquery'),
+                        use: [{
+                            loader: 'expose-loader',
+                            options: '$'
+                        }]
+                    },
+                    {
                         loader: require.resolve('file-loader'),
                         // Exclude `js` files to keep "css" loader working as it injects
                         // it's runtime that would otherwise processed through "file" loader.
